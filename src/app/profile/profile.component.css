@@ -1,0 +1,14 @@
+mat-toolbar {
+  background-color: rgba(208, 231, 77, 0.979);
+  color: black;
+  width: 100%;
+}
+
+.full-width {
+  width: 80%;
+  padding: 0 25px;
+}
+
+mat-radio-button {
+  margin: 0 12px;
+}

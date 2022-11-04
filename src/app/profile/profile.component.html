@@ -1,0 +1,45 @@
+<div mat-dialog-title>
+  <mat-toolbar>
+    <span>Bussiness Details</span>
+  </mat-toolbar>
+</div>
+<div mat-dialog-content>
+  <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+    <mat-form-field class="full-width">
+      <mat-label>Name</mat-label>
+      <input matInput type="text" placeholder="Enter Name" formControlName="name">
+  </mat-form-field>
+
+  <mat-form-field class="full-width">
+    <mat-label>Domain</mat-label>
+    <input matInput type="mail" placeholder="www.ghfjhjg.com" formControlName="domain">
+</mat-form-field>
+
+<div style="margin-bottom: 25px;">
+<mat-radio-group aria-label="Select a Gender" formControlName="gender">
+  <mat-radio-button value="male">Male</mat-radio-button>
+  <mat-radio-button value="female">Female</mat-radio-button>
+</mat-radio-group>
+</div>
+<mat-form-field class="full-width">
+  <mat-label>Date of Birth</mat-label>
+  <input matInput [matDatepicker]="picker" placeholder="Enter Name" formControlName="dob">
+  <mat-hint>MM/DD/YYYY</mat-hint>
+  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+  <mat-datepicker #picker></mat-datepicker>
+</mat-form-field>
+
+<mat-form-field class="full-width">
+  <mat-label>Phone Number</mat-label>
+  <span matPrefix>+91 &nbsp;</span>
+  <input matInput type="text" placeholder="9845623145" formControlName="mobile" maxlength="10">
+</mat-form-field>
+
+<mat-form-field class="full-width">
+  <mat-label>Location</mat-label>
+  <textarea matInput type="text" placeholder="www.ghfjhjg.com" formControlName="location"></textarea>
+</mat-form-field>
+
+  </form>
+
+</div>

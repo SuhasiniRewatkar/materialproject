@@ -1,0 +1,24 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+.example-icon {
+  padding: 0 14px;
+}
+mat-toolbar {
+  width: 100%;
+}
+
+.user {
+  height:30px;
+  width:30px;
+}
+
+.logo {
+  height: 30px;
+  width: 30px;
+}
+
+.icons-btn {
+margin: 10px;
+}
+
