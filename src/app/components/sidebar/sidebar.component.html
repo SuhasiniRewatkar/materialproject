@@ -1,20 +1,20 @@
 <mat-sidenav-container>
-  <mat-sidenav mode="side" opened>
-  <!-- <mat-sidenav mode="over"> -->
+  <!-- <mat-sidenav mode="side" opened> -->
+  <mat-sidenav #sidenav mode="side" [(opened)]="opened">
     <img class="avatar mat-elevation-z8" src="assets/images/profile.jpg">
     <h4 class="name">Jone Smith</h4>
     <div>
       <p class="designation">CFA CIC</p>
     <span>
-      <!-- <img src="./assets/images/school-img.svg"> -->
+      <img src="./assets/images/golden_crown_312687.jpg" width="24px" height="24px">
       Premium Member
     </span>
     </div>
 
-    <div>
+    <div class="mb-3">
       <span>
-      <img  src="assets/images/school-img.svg" class="school">
-      <p> Insurance Agent, Attorney,</p>
+        <img  src="assets/images/school-img.svg" class="school"> Insurance Agent, Attorney,
+      <!-- <p><img  src="assets/images/school-img.svg" class="school"> Insurance Agent, Attorney,</p> -->
         Accountant
     </span>
     </div>
